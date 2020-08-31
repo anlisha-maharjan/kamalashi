@@ -1,0 +1,17 @@
+<IfModule mod_headers.c>
+    Header always append X-Frame-Options SAMEORIGIN
+    Header set X-Content-Type-Options nosniff
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+<IfModule mod_rewrite.c>
+    # Make sure directory listing is disabled
+    Options +FollowSymLinks -Indexes
+    # disable the Apache MultiViews directive if it is enabled on the server. It plays havoc  with URL rewriting
+    Options -MultiViews
+    RewriteEngine on
+    # Send request via index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php?/$1 [L]
+
+</IfModule>

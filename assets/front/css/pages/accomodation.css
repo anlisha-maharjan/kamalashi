@@ -1,0 +1,281 @@
+#room-list-section {
+	padding: 50px 0;
+	background-color: rgba(29, 29, 29, .83);
+}
+
+#room-list-section h3 {
+	margin: 0 0 40px;
+	color: #e6d284;
+}
+
+.rooms-lists {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	margin: 0 0 20px;
+	border: 1px solid #948959;
+}
+
+.rooms-lists figure {
+	height: 150px;
+	flex-basis: 100%;
+	border-bottom: 1px solid #948959;
+	background-size: cover;
+	background-position: center center;
+}
+
+.rooms-desc {
+	flex-basis: 100%;
+	padding: 20px 20px 20px 20px;
+}
+
+.rooms-desc h5 {
+	margin: 0 0 20px;
+}
+
+.rooms-desc p {
+	margin: 0 0 15px;
+	color: #e6d284;
+	font-style: italic;
+}
+
+.rooms-desc form {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.rooms-desc form .form-group {
+	display: flex;
+	justify-content: space-between;
+	flex-basis: 100%;
+	flex-wrap: wrap;
+	font-size: 16px;
+}
+
+.rooms-desc form .form-group:last-child {
+	margin: 0;
+}
+
+.rooms-desc .select2-container {
+	margin-left: auto;
+	text-align: right;
+}
+
+.rooms-desc .select2-container .select2-selection__rendered:not([title="Select"]) {
+	padding: 0;
+	text-align: right;
+}
+
+.rooms-desc .select2-container .select2-selection__rendered:not([title="Select"])+.select2-selection__arrow {
+	display: none;
+}
+
+.rooms-desc form .form-group label {
+	margin: 0;
+	color: #cccccc;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.rooms-desc form .form-group button {
+	margin: 10px 0 0;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.reservation-check-form {
+	margin: 0 0 30px;
+	padding: 20px;
+	border: 1px solid #948959;
+}
+
+.reservation-check-form .row+.form-group {
+	margin: 20px 0 0;
+}
+
+.reservation-check-form label {
+	display: block;
+	margin: 0 0 10px;
+	color: #e6d284;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.reservation-check-form input {
+	width: 100%;
+	padding: 10px 10px;
+	border: 1px solid #948959;
+	background-color: transparent;
+	color: #e6d284;
+	font-size: 14px;
+}
+
+.reservation-check-form .date-holder {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 10px;
+	border: 1px solid #948959;
+}
+
+.reservation-check-form .date-holder input {
+	width: calc(100% - 25px);
+	padding: 0;
+	border: none;
+}
+
+.date-holder img {
+	width: 15px;
+	height: 15px;
+}
+
+.room-selection-list {
+	margin: 0 0 40px;
+	padding: 20px;
+	border: 1px solid #948959;
+}
+
+.room-selection-list h5 {
+	margin: 0 0 25px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e6d284;
+	color: #e6d284;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+}
+
+.room-selection-list .rooms-selected {
+	margin: 0 0 20px;
+	border-bottom: 1px solid #e6d284;
+}
+
+.room-selection-list .rooms-selected .form-group {
+	margin: 0 0 15px;
+}
+
+.room-selection-list .rooms-selected:last-child+.form-group {
+	margin: 30px 0 0;
+}
+
+.room-selection-list .rooms-selected h5 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	border: none;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: 700;
+}
+
+.room-selection-list .rooms-selected h5 span {
+	width: calc(100% - 30px);
+	display: inline-block;
+	color: #e6d284;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.room-selection-list .rooms-selected h5 button {
+	margin-left: auto;
+	border: none;
+	background-color: transparent;
+}
+
+.room-selection-list .form-group label {
+	width: 100px;
+	margin: 0;
+	color: #cccccc;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.room-selection-list .form-group span {
+	color: #948959;
+}
+
+.ribbon {
+	position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 105px;
+    height: 105px;
+    text-align: right;
+}
+
+.ribbon span {
+	font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 26px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 130px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#F0C319 0%, #F0C319 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 24px;
+    left: -27px;
+}
+
+.ribbon span::before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	top: 100%;
+	z-index: -1;
+	border-left: 3px solid #F0C319;
+	border-right: 3px solid transparent;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid #F0C319;
+}
+
+.ribbon span::after {
+	content: "";
+	position: absolute;
+	right: 0px;
+	top: 100%;
+	z-index: -1;
+	border-left: 3px solid transparent;
+	border-right: 3px solid #F0C319;
+	border-bottom: 3px solid transparent;
+	border-top: 3px solid #F0C319;
+}
+
+@media(min-width: 768px) {
+	.rooms-lists {
+		flex-direction: row;
+		border-left: none;
+	}
+	.rooms-lists figure {
+		height: auto;
+		flex-basis: 50%;
+		border: none;
+	}
+	.rooms-desc {
+		flex-basis: 60%;
+		padding: 20px 20px 20px 30px;
+	}
+	.rooms-desc form .form-group {
+		flex-basis: 50%;
+	}
+	.rooms-desc form .form-group:nth-child(2n) {
+		padding-left: 20px;
+	}
+	.rooms-desc .select2-container {
+		text-align: left;
+	}
+}
+
+@media(min-width: 1024px) {
+	.room-selection-list {
+		margin: 0;
+	}
+}

@@ -1,0 +1,137 @@
+.inner-default-bg {
+    background-color: rgba(29, 29, 29, .83);
+}
+
+.tick-listed {
+    margin: 0;
+    padding: 0;
+}
+
+.tick-listed li {
+    position: relative;
+    color: #948959;
+    padding: 5px 5px 5px 25px;
+}
+
+.tick-listed li:before {
+    width: 12px;
+    height: 12px;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 9px;
+    background-image: url('../../images/icons/icon-tick.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* ========== Start Inner Banner ========== */
+
+.inner-banner {
+    height: 230px;
+    position: relative;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.inner-banner:before,
+.inner-banner:after {
+	width: 100%;
+    content: "";
+	position: absolute;
+	left: 0;
+	background-size: cover;
+    z-index: 1;
+}
+.inner-banner:before {    
+	height: 80%;
+    top: 0;    
+    background-image: url('../../images/banner-overlay-top.png');    
+}
+.inner-banner:after {
+    height: 25%;
+    bottom: 0;
+    background-image: url('../../images/banner-overlay-bottom.png');
+}
+.inner-banner h3 {
+    width: 100%;
+    position: absolute;
+    top: calc(50% + 60px);
+    left: 50%;
+    color: #f1c314;
+    font-size: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.inner-banner img {
+    height: 100%;
+    opacity: .48;
+}
+
+@media(min-width: 768px) {
+    .inner-banner {
+        height: 300px;
+    }
+    .inner-banner img {
+        height: auto;
+    }
+    .inner-banner h3 {
+        font-size: 25px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .inner-banner {
+        height: 500px;
+    }
+}
+
+
+/* ========== End Inner Banner ========== */
+
+
+/* ========== Start Breadcrumb ========== */
+
+.breadcrumb-wrap {
+    background-color: rgba(29, 29, 29, .83);
+}
+
+.breadcrumb {
+    margin: 0;
+    padding: 20px 0;
+    background-color: transparent;
+}
+
+.breadcrumb li {
+    position: relative;
+}
+
+.breadcrumb>li+li {
+    margin-left: 20px;
+}
+
+.breadcrumb>li+li:before {
+    content: ".";
+    position: absolute;
+    left: -14px;
+    bottom: -1px;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.breadcrumb li a,
+.breadcrumb li span {
+    color: #cccccc;
+}
+
+
+/* ========== End Breadcrumb ========== */

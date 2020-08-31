@@ -1,0 +1,58 @@
+#page-contact {
+    padding: 50px 0;
+    background-color: rgba(29, 29, 29, .83);
+}
+
+#page-contact .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#page-contact h4 {
+    margin: 0 0 40px;
+}
+
+#page-contact .form-group {
+    margin: 0 0 25px;
+}
+
+#page-contact label {
+    font-size: 16px;
+    color: #e6d26d;
+    font-weight: 400;
+}
+
+#page-contact input,
+#page-contact textarea {
+    border: 1px solid #e6d26d;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: transparent;
+    color: #e6d26d;
+}
+
+#page-contact textarea {
+    height: 180px;
+    resize: none;
+}
+
+#page-contact .btn-light-golden {
+    width: auto;
+    margin: 0 0 0 auto;
+    font-weight: 600;
+    display: block;
+    padding: 10px 20px;
+}
+
+#map {
+    width: 100%;
+    height: 300px;
+    margin: 0 0 50px;
+}
+
+@media(min-width: 768px) {
+    #map {
+        height: calc(100% - 14rem);
+        margin: 0;
+    }
+}
